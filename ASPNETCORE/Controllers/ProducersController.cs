@@ -15,7 +15,7 @@ namespace ASPNETCORE.Controllers
         public async Task<IActionResult> Index()
         {
             var allProducers = await _contex.Producers.ToListAsync();
-            return View();
+            return View(allProducers);
         }
     }
 }

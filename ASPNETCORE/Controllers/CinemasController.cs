@@ -15,7 +15,7 @@ namespace ASPNETCORE.Controllers
         public async Task<IActionResult> Index()
         {
             var allCinemas = await _contex.Cinemas.ToListAsync();
-            return View();
+            return View(allCinemas);
         }
     }
 }
